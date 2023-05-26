@@ -1,9 +1,3 @@
-.total {
-    background-color: rgb(88, 170, 205);
-    width: 200px;
-    height: 40px;
-
-}
 
 body {
     background-color: rgb(128, 212, 212);
@@ -52,4 +46,18 @@ h1 {
 p {
     font-size: 20px;
     font-weight: bold;
+}
+.total {
+    background-color: rgb(88, 170, 205);
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.numberOfPackets,
+.costPricePerApple,
+.costPricePerPacket,
+.reccommendedPacketPrice {
+    text-align: center;
 }
