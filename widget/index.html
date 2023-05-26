@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="apples.css">
+    <title>Apples-packet-price-planner</title>
+</head>
+<body>
+    <h1>Apple packet price planner</h1>
+    <p>Apple Buying Data</p>
+    <div class="form">
+        <label for="costPriceForBoxOfApples">Cost price for a box of apples</label>
+        <input type="number" name="" value="" class="costPriceForBoxOfApples" required>
+    </div>
+    <div class="form">
+        <label for="numberOfApplesInTheBox item">Number of apples in the box</label>
+        <input type="number" name="" value="" class="numberOfApplesInTheBox" required>
+    </div>
+    <div class="form">
+        <label for="thePacketSizeApplesAreSoldIn item">The packet size apples are sold in</label>
+        <input type="number" name="" value="" class="thePacketSizeApplesAreSoldIn" required>
+    </div>
+    <div class="form">
+        <label for="requiredProfit">Required profit %</label>
+        <input type="number" name="" value="" class="requiredProfit" required>
+    </div>
+    <div class="form">
+        <button class="calculateButton" type="button" name="button" >Calculate</button>
+    </div><br>
+    <p>Apple price Calculations</p>
+    <div class="centerDiv container">
+        <label for="numberOfPackets item">Number of Packets</label>
+        <div class="total"><span class="numberOfPackets item"></span></div>
+    </div>
+    <div class="centerDiv container">
+        <label for="costPricePerApple item">Cost price per apple</label>
+        <div class="total"><span class="costPricePerApple item"></span></div>
+    </div>
+    <div class="centerDiv container">
+        <label for="costPricePerPacket item">Cost price per packet</label>
+        <div class="total"><span class="costPricePerPacket item"></span></div>
+    </div>
+    <div class="centerDiv container">
+        <label for="reccommendedPacketPrice item">Reccommended packet price</label>
+        <div class="total"><span class="reccommendedPacketPrice item"></span></div>
+    </div>
+
+
+
+</body>
+<script src="./apples.js"></script>
+</html>
