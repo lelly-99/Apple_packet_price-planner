@@ -14,17 +14,22 @@ var reccommendedPacketPrice = document.querySelector(".reccommendedPacketPrice")
 var applePlanner = applePacketPricePlanner()
 //event listener
 calculateButton.addEventListener("click", function () {
-    var costforBoxOfApples = Number(costPriceForBoxOfApples.value)
-    var applesInTheBox = Number(numberOfApplesInTheBox.value)
-    var packetSizeApplesAreSoldIn = Number(thePacketSizeApplesAreSoldIn.value)
-    var profit = Number(requiredProfit.value)
+    var costForBoxOfApples = costPriceForBoxOfApples.value
+    var applesInTheBox = numberOfApplesInTheBox.value
+    var packetSizeApplesAreSoldIn = thePacketSizeApplesAreSoldIn.value
+    var profit = requiredProfit.value
     
 
-    if (costPriceForBoxOfApples && applesInTheBox && packetSizeApplesAreSoldIn && profit) {
-        costPricePerApple.innerHTML = (costforBoxOfApples / applesInTheBox).toFixed(2)
-        costPricePerPacket.innerHTML = (costforBoxOfApples / packetSizeApplesAreSoldIn).toFixed(2)
-        reccommendedPacketPrice.innerHTML = ((costforBoxOfApples / packetSizeApplesAreSoldIn) * profit).toFixed(2)
-        numberOfPackets.innerHTML = (applesInTheBox / packetSizeApplesAreSoldIn).toFixed()
+    if (costForBoxOfApples && applesInTheBox && packetSizeApplesAreSoldIn && profit) {
+        applePlanner.setcostforBoxOfApples(costForBoxOfApples)
+        applePlanner.setpacketSizeApplesAreSoldIn(applesInTheBox)
+        applePlanner.setapplesInTheBox(packetSizeApplesAreSoldIn)
+        applePlanner.setprofit(profit)
+
+        costPricePerApple.innerHTML = applePlanner.getcostPricePerApple()
+        costPricePerPacket.innerHTML = applePlanner.getcostPricePerPacket()
+        reccommendedPacketPrice.innerHTML = applePlanner.getReccommendedPacketPrice()
+        numberOfPackets.innerHTML = applePlanner.getnumberOfPackets()
     }
 })
 

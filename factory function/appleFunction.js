@@ -33,7 +33,7 @@ function applePacketPricePlanner() {
 
     function getnumberOfPackets() {
         numberOfPackets = costforBoxOfApples / packetSizeApplesAreSoldIn
-        return numberOfPackets.toFixed(2)
+        return numberOfPackets.toFixed()
     }
 
     function getcostPricePerApple() {
