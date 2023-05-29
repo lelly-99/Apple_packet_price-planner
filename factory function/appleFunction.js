@@ -8,6 +8,7 @@ function applePacketPricePlanner() {
     var costforBoxOfApples = 0
     var applesInTheBox = 0
     var recomprofit = 0
+    var numberOfPackets = 0
 
 
     function setcostforBoxOfApples(box) {

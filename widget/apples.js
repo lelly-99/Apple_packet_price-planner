@@ -18,6 +18,7 @@ calculateButton.addEventListener("click", function () {
     var applesInTheBox = Number(numberOfApplesInTheBox.value)
     var packetSizeApplesAreSoldIn = Number(thePacketSizeApplesAreSoldIn.value)
     var profit = Number(requiredProfit.value)
+    
 
     if (costPriceForBoxOfApples && applesInTheBox && packetSizeApplesAreSoldIn && profit) {
         costPricePerApple.innerHTML = (costforBoxOfApples / applesInTheBox).toFixed(2)
