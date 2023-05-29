@@ -1,4 +1,4 @@
 
 
 * [Widget](./widget/index.html)
-* [Tests](./test/test.html)
+* [Tests](./tests/test.html)
